@@ -1,0 +1,59 @@
+Linear_Regression -> **Employee Performance Salary Prediction**  
+
+## **Overview**  
+This project analyzes employee performance and predicts salaries based on **years of experience** using **Linear Regression**. The dataset is preprocessed, trained, and evaluated using **machine learning techniques** with **Python (pandas, NumPy, scikit-learn, Seaborn, and Matplotlib).**  
+
+## **Dataset**  
+- The dataset consists of **1000 employee records** with various attributes like **Age, Gender, Department, Salary, Experience, Performance Score, etc.**  
+- **Target Variable:** `Salary`  
+- **Feature Used for Prediction:** `Experience`  
+- **Missing Values:** The `Salary` column is filled with its mean value.  
+
+## **Dependencies**  
+- Python 3.x  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
+
+## **Installation**  
+1. Install required libraries:  
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn
+   ```
+2. Place the dataset (`Employe_Performance_dataset.csv`) in the working directory.  
+3. Run the script to train and evaluate the model.  
+
+## **Steps in the Project**  
+1. **Load Data** – Read the dataset using `pandas`.  
+2. **Exploratory Data Analysis (EDA)** – Check missing values, data types, and visualize relationships.  
+3. **Data Preprocessing** – Handle missing values in `Salary`.  
+4. **Feature Selection** – Use `Experience` as the predictor.  
+5. **Train-Test Split** – Split data into 80% training and 20% testing.  
+6. **Model Training** – Train a **Linear Regression model** using scikit-learn.  
+7. **Predictions & Evaluation**  
+   - Calculate **Mean Squared Error (MSE)** and **R-squared (R²)**.  
+   - Plot **actual vs predicted salaries** for better visualization.  
+
+## **Results**  
+- The **model predicts salaries** based on years of experience.  
+- Evaluated using **MSE and R² score** to measure performance.  
+
+## **Usage**  
+Run the script and observe the predicted salaries compared to actual values:  
+```python
+python salary_prediction.py
+```  
+This will output **MSE, R² scores**, and a **plot comparing actual vs predicted salaries**.  
+
+## **Limitations**  
+- Only considers **Experience** as the predictor, ignoring other factors.  
+- The model assumes a **linear relationship**, which may not always be accurate.  
+- **Performance Score** has many missing values, which could affect deeper analysis.  
+
+## **Future Improvements**  
+- Use **multiple features** (e.g., `Performance Score, Age, Department`) for better predictions.  
+- Handle missing data in `Performance Score` effectively.  
+- Explore other regression models for better accuracy.  
+
